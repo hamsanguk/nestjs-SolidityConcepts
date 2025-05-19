@@ -3,7 +3,7 @@ import fs from 'fs';
 import { CreateUserDto } from '../dto/create-user.dto';
 
 const base = path.join(__dirname, '../../../../');
-const DB_PATH = path.join(base, 'src/user/repository/users.mock.json');
+const DB_PATH = path.join(base, 'src/modules/user/repository/users.mock.json');
 
 export class UserRepository {
   async findOne(userId: string) {
